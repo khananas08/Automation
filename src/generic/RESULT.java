@@ -1,12 +1,14 @@
 package generic;
 
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class RESULT implements ITestListener, IAutoConst{
-	public static int passCount=0,failCount=0;
 
+public class RESULT  implements ITestListener, IAutoConst  {
+	public static int passCount=0,failCount=0;
+	
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -22,6 +24,7 @@ public class RESULT implements ITestListener, IAutoConst{
 	@Override
 	public void onTestFailure(ITestResult result) {
 		failCount++;
+		
 		
 	}
 

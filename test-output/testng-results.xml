@@ -2,42 +2,55 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Data:Username]]>
-    </line>
-    <line>
-      <![CDATA[Row:1]]>
-    </line>
-    <line>
-      <![CDATA[Photo:./photo/Thu Sep 27 12_06_44 IST 2018.png]]>
+      <![CDATA[Test : testLoginLogout is PASSED ]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34389" started-at="2018-09-27T06:36:13Z" finished-at="2018-09-27T06:36:47Z">
+  <suite name="Default suite" duration-ms="27755" started-at="2018-10-01T09:10:30Z" finished-at="2018-10-01T09:10:58Z">
     <groups>
+      <group name="smoke">
+        <method signature="TestLoginLogout.testLoginLogout()[pri:1, instance:script.TestLoginLogout@480bdb19]" name="testLoginLogout" class="script.TestLoginLogout"/>
+      </group> <!-- smoke -->
+      <group name="login">
+        <method signature="TestLoginLogout.testLoginLogout()[pri:1, instance:script.TestLoginLogout@480bdb19]" name="testLoginLogout" class="script.TestLoginLogout"/>
+      </group> <!-- login -->
     </groups>
-    <test name="Default test" duration-ms="34389" started-at="2018-09-27T06:36:13Z" finished-at="2018-09-27T06:36:47Z">
-      <class name="script.TestDemo">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.TestDemo@7d9d1a19]" name="openApp" is-config="true" duration-ms="26930" started-at="2018-09-27T06:36:13Z" finished-at="2018-09-27T06:36:40Z">
+    <test name="Default test" duration-ms="27755" started-at="2018-10-01T09:10:30Z" finished-at="2018-10-01T09:10:58Z">
+      <class name="script.TestLoginLogout">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestLoginLogout@480bdb19]" name="openApp" is-config="true" duration-ms="14532" started-at="2018-10-01T09:10:30Z" finished-at="2018-10-01T09:10:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testA()[pri:0, instance:script.TestDemo@7d9d1a19]" name="testA" duration-ms="5248" started-at="2018-09-27T06:36:40Z" finished-at="2018-09-27T06:36:45Z">
+        <test-method status="PASS" signature="testLoginLogout()[pri:1, instance:script.TestLoginLogout@480bdb19]" name="testLoginLogout" duration-ms="11595" started-at="2018-10-01T09:10:45Z" finished-at="2018-10-01T09:10:56Z">
           <reporter-output>
-            <line>
-              <![CDATA[Data:Username]]>
-            </line>
-            <line>
-              <![CDATA[Row:1]]>
-            </line>
-            <line>
-              <![CDATA[Photo:./photo/Thu Sep 27 12_06_44 IST 2018.png]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:script.TestDemo@7d9d1a19]" name="closeApp" is-config="true" duration-ms="2155" started-at="2018-09-27T06:36:45Z" finished-at="2018-09-27T06:36:47Z">
+        </test-method> <!-- testLoginLogout -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestLoginLogout@480bdb19]" name="closeApp" is-config="true" duration-ms="1566" started-at="2018-10-01T09:10:56Z" finished-at="2018-10-01T09:10:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginLogout status=SUCCESS method=TestLoginLogout.testLoginLogout()[pri:1, instance:script.TestLoginLogout@480bdb19] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test : testLoginLogout is PASSED ]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- script.TestDemo -->
+      </class> <!-- script.TestLoginLogout -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
